@@ -109,8 +109,8 @@ app.post('/send-email', (req, res) => {
       </html>
     `,
     attachments: [{
-      filename: 'logo.jpg', // Name of the file as it appears in the email (update if different)
-      path: 'public/images/logo2.png', // Relative path from index.js to the image
+      filename: 'logo.png', // Name of the file as it appears in the email (update if different)
+      path: '/images/logo2.png', // Relative path from index.js to the image
       cid: 'logo' // Content-ID to reference in the HTML (must match src="cid:logo")
     }]
   };
