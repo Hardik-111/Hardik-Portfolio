@@ -72,7 +72,7 @@ const Hero = () => {
   };
 
   const handleDownloadResume = () => {
-    const resumeUrl = '/resume.pdf'; // Path to PDF in public folder, or use 'https://your-domain.com/resume.pdf' for production
+    const resumeUrl = '/Hardik_Kumar_Singh_Resume.pdf'; // Path to PDF in public folder, or use 'https://your-domain.com/resume.pdf' for production
     const link = document.createElement('a');
     link.href = resumeUrl;
     link.download = 'Hardik_Kumar_Singh_Resume.pdf'; // Suggested filename for download
