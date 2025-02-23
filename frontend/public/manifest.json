@@ -1,0 +1,9 @@
+{
+    "short_name": "Hardik KS",
+    "name": "Hardik Kumar Singh - Portfolio",
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#1e293b",
+    "background_color": "#f5f5f5", 
+    "description": "Portfolio of Hardik Kumar Singh, showcasing skills in full-stack development, AI, and web solutions."
+  }

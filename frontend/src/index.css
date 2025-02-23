@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* Default font for consistency */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f5f5; /* Light gray-50 background as default */
+  color: #333333; /* Default text color for readability */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Custom styles for your portfolio */
+.gradient-text {
+  background: linear-gradient(to right, #14b8a6, #7c3aed); /* Teal to purple gradient */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Scrollbar styling for consistency */
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thumb-teal-600 {
+  scrollbar-color: #14b8a6 #e5e7eb;
+}
+
+.scrollbar-track-gray-200 {
+  background-color: #e5e7eb;
+}
+
+/* Ensure dark mode compatibility (optional, extend as needed) */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1e293b; /* Dark gray-900 for dark mode */
+    color: #d1d5db; /* Light gray-300 for text in dark mode */
+  }
+}
