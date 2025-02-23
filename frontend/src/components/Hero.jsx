@@ -32,7 +32,7 @@ const Hero = () => {
     setIsSending(true);
 
     try {
-      const response = await fetch('http://localhost:5000/send-email', {
+      const response = await fetch('/api/send-email', {  // Updated for Vercel deployment (merged backend)
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
@@ -72,7 +72,7 @@ const Hero = () => {
   };
 
   const handleDownloadResume = () => {
-    const resumeUrl = '/Hardik_Kumar_Singh_Resume.pdf'; // Path to PDF in public folder, or use a public URL like 'https://your-domain.com/resume.pdf'
+    const resumeUrl = '/resume.pdf'; // Path to PDF in public folder, or use 'https://your-domain.com/resume.pdf' for production
     const link = document.createElement('a');
     link.href = resumeUrl;
     link.download = 'Hardik_Kumar_Singh_Resume.pdf'; // Suggested filename for download
@@ -230,7 +230,7 @@ const Hero = () => {
             animate={{ x: 0, opacity: 1, scale: 1 }}
             transition={{ delay: 0.3, duration: 0.8, ease: 'easeOut' }}
             whileHover={{ scale: 1.05, rotate: 5 }}
-            src="/pp1.png"
+            src="/profile-pic1.png"
             alt="Profile"
             className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-xl border-4 border-teal-600/50"
           />
