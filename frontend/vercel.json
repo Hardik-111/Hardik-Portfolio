@@ -1,0 +1,23 @@
+{
+    "version": 2,
+   
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      },
+      {
+        "src": "/api/(.*)",
+        "dest": "/api/$1"
+      }
+    ],
+    "env": {
+      "MAILTRAP_HOST": "sandbox.smtp.mailtrap.io",
+      "MAILTRAP_PORT": "2525",
+      "MAILTRAP_USER": "aa4323e14f18f1",
+      "MAILTRAP_PASS": "d0b11cd8b3d5c5",
+      "EMAIL_USER": "ihardik.002@gmail.com",
+      "EMAIL_PASS": "eght rflp nqfx ddnz",
+      "PORT": "5000"
+    }
+  }

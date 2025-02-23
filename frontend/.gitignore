@@ -12,3 +12,6 @@ logs/
 dist/
 build/
 .vercel
+.vercel.json
+# Vercel configuration (optional, exclude only if sensitive data is included)
+# vercel.json  # Uncomment this line if you want to exclude vercel.json from version control

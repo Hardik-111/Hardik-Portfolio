@@ -230,7 +230,7 @@ const Hero = () => {
             animate={{ x: 0, opacity: 1, scale: 1 }}
             transition={{ delay: 0.3, duration: 0.8, ease: 'easeOut' }}
             whileHover={{ scale: 1.05, rotate: 5 }}
-            src="/profile-pic1.png"
+            src="/pp1.png"
             alt="Profile"
             className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-xl border-4 border-teal-600/50"
           />

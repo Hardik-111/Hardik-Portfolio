@@ -1,17 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
 
-  const navLinks = [
+  // Memoize navLinks to prevent it from being recreated on every render
+  const navLinks = useMemo(() => [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Projects', href: '#projects' },
     { name: 'Skills', href: '#skills' },
     { name: 'Timeline', href: '#timeline' },
-  ];
+  ], []); // Empty dependency array ensures navLinks is only created once
 
   // Detect active section based on scroll position
   useEffect(() => {
@@ -33,7 +34,7 @@ const Navbar = () => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [navLinks]);
+  }, [navLinks]); // navLinks is now memoized, so this dependency is stable
 
   return (
     <nav className="bg-gray-900 shadow-md fixed w-full z-50">
